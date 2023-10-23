@@ -19,7 +19,37 @@
     <Compile Update="AControls\ATextboxUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="Usercontrols\FlightItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\PlaneItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\PlaneSeatItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Flight\FlightListUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Flight\FlightUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin\HomeAdminUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Plane\OperationPlaneUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Plane\PlaneListUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Plane\PlaneUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Report\ReportUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
