@@ -19,10 +19,10 @@
     <Compile Update="AControls\ATextboxUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ReportByMonthUC.cs">
+    <Compile Update="View\Admin\Report\ReportByMonthUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ReportByYearUC.cs">
+    <Compile Update="View\Admin\Report\ReportByYearUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Usercontrols\FlightItemUC.cs">
