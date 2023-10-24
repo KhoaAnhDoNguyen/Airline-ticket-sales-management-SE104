@@ -60,13 +60,13 @@ namespace Airline_ticket_sales_management
 
         private void abtnFlight_Click(object sender, EventArgs e)
         {
-            if (currentButton != null)
-            {
-                doDeactivateButton(currentButton);
-            }
-
             if (currentButton != abtnFlight)
             {
+                if (currentButton != null)
+                {
+                    doDeactivateButton(currentButton);
+                }
+
                 currentButton = abtnFlight;
                 doActivateButton(currentButton);
                 loadBody(new FlightUC());
@@ -75,16 +75,31 @@ namespace Airline_ticket_sales_management
 
         private void abtnPlane_Click(object sender, EventArgs e)
         {
-            if (currentButton != null)
-            {
-                doDeactivateButton(currentButton);
-            }
-
             if (currentButton != abtnPlane)
             {
+                if (currentButton != null)
+                {
+                    doDeactivateButton(currentButton);
+                }
+
                 currentButton = abtnPlane;
                 doActivateButton(currentButton);
                 loadBody(new PlaneUC());
+            }
+        }
+
+        private void abtnReport_Click(object sender, EventArgs e)
+        {
+            if (currentButton != abtnReport)
+            {
+                if (currentButton != null)
+                {
+                    doDeactivateButton(currentButton);
+                }
+
+                currentButton = abtnReport;
+                doActivateButton(currentButton);
+                loadBody(new ReportUC());
             }
         }
     }

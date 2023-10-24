@@ -19,6 +19,12 @@
     <Compile Update="AControls\ATextboxUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ReportByMonthUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ReportByYearUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Usercontrols\FlightItemUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -26,6 +32,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Usercontrols\PlaneSeatItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\ReportByMonthItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\ReportByYearItemUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="View\Admin\Flight\FlightListUC.cs">

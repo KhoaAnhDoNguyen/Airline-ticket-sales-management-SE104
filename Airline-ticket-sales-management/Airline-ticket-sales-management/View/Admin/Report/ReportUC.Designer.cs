@@ -28,19 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
+            aDateTimePicker1 = new AControls.ADateTimePicker();
+            acbTypeReport = new AControls.AComboBox();
+            pnBodyReport = new Panel();
             SuspendLayout();
+            // 
+            // aDateTimePicker1
+            // 
+            aDateTimePicker1.BorderColor = Color.FromArgb(3, 4, 94);
+            aDateTimePicker1.BorderSize = 1;
+            aDateTimePicker1.CalendarFont = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            aDateTimePicker1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            aDateTimePicker1.Format = DateTimePickerFormat.Custom;
+            aDateTimePicker1.Location = new Point(300, 30);
+            aDateTimePicker1.MinimumSize = new Size(0, 35);
+            aDateTimePicker1.Name = "aDateTimePicker1";
+            aDateTimePicker1.Size = new Size(150, 35);
+            aDateTimePicker1.SkinColor = Color.White;
+            aDateTimePicker1.TabIndex = 1;
+            aDateTimePicker1.TextColor = Color.FromArgb(3, 4, 94);
+            // 
+            // acbTypeReport
+            // 
+            acbTypeReport.AutoCompleteMode = AutoCompleteMode.Suggest;
+            acbTypeReport.AutoCompleteSource = AutoCompleteSource.ListItems;
+            acbTypeReport.BackColor = Color.White;
+            acbTypeReport.BorderColor = Color.FromArgb(3, 4, 94);
+            acbTypeReport.BorderSize = 1;
+            acbTypeReport.DropDownStyle = ComboBoxStyle.DropDown;
+            acbTypeReport.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            acbTypeReport.ForeColor = Color.DimGray;
+            acbTypeReport.IconColor = Color.FromArgb(3, 4, 94);
+            acbTypeReport.Items.AddRange(new object[] { "Báo cáo theo tháng", "Báo cáo theo năm" });
+            acbTypeReport.ListBackColor = Color.FromArgb(3, 4, 94);
+            acbTypeReport.ListTextColor = Color.White;
+            acbTypeReport.Location = new Point(50, 30);
+            acbTypeReport.MinimumSize = new Size(170, 30);
+            acbTypeReport.Name = "acbTypeReport";
+            acbTypeReport.Padding = new Padding(1);
+            acbTypeReport.Size = new Size(220, 38);
+            acbTypeReport.TabIndex = 2;
+            acbTypeReport.Texts = "";
+            acbTypeReport.SelectedIndexChanged += acbTypeReport_SelectedIndexChanged;
+            // 
+            // pnBodyReport
+            // 
+            pnBodyReport.Location = new Point(0, 70);
+            pnBodyReport.Name = "pnBodyReport";
+            pnBodyReport.Size = new Size(1500, 755);
+            pnBodyReport.TabIndex = 3;
             // 
             // ReportUC
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 245, 248);
+            Controls.Add(pnBodyReport);
+            Controls.Add(acbTypeReport);
+            Controls.Add(aDateTimePicker1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "ReportUC";
-            Size = new Size(1500, 875);
+            Size = new Size(1500, 825);
             ResumeLayout(false);
         }
 
         #endregion
+        private AControls.ADateTimePicker aDateTimePicker1;
+        private AControls.AComboBox acbTypeReport;
+        private Panel pnBodyReport;
     }
 }

@@ -33,7 +33,7 @@
             aButton6 = new AControls.AButton();
             aButton5 = new AControls.AButton();
             abtnPlane = new AControls.AButton();
-            aButton3 = new AControls.AButton();
+            abtnReport = new AControls.AButton();
             aButton2 = new AControls.AButton();
             abtnFlight = new AControls.AButton();
             pcbClose = new PictureBox();
@@ -66,7 +66,7 @@
             pnMenu.Controls.Add(aButton6);
             pnMenu.Controls.Add(aButton5);
             pnMenu.Controls.Add(abtnPlane);
-            pnMenu.Controls.Add(aButton3);
+            pnMenu.Controls.Add(abtnReport);
             pnMenu.Controls.Add(aButton2);
             pnMenu.Controls.Add(abtnFlight);
             pnMenu.Location = new Point(200, 65);
@@ -148,29 +148,30 @@
             abtnPlane.UseVisualStyleBackColor = false;
             abtnPlane.Click += abtnPlane_Click;
             // 
-            // aButton3
+            // abtnReport
             // 
-            aButton3.BackColor = Color.Transparent;
-            aButton3.BackgroundColor = Color.Transparent;
-            aButton3.BorderColor = Color.FromArgb(124, 124, 124);
-            aButton3.BorderRadius = 0;
-            aButton3.BorderSize = 0;
-            aButton3.Dock = DockStyle.Left;
-            aButton3.FlatAppearance.BorderSize = 0;
-            aButton3.FlatStyle = FlatStyle.Flat;
-            aButton3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            aButton3.ForeColor = Color.FromArgb(124, 124, 124);
-            aButton3.LineType = AControls.AButton.LineStyles.None;
-            aButton3.Location = new Point(300, 0);
-            aButton3.Margin = new Padding(3, 4, 3, 4);
-            aButton3.Name = "aButton3";
-            aButton3.RoundType = AControls.AButton.RoundStyles.Full;
-            aButton3.Size = new Size(150, 60);
-            aButton3.TabIndex = 6;
-            aButton3.Text = "Báo cáo";
-            aButton3.TextColor = Color.FromArgb(124, 124, 124);
-            aButton3.ThinknessLine = 5;
-            aButton3.UseVisualStyleBackColor = false;
+            abtnReport.BackColor = Color.Transparent;
+            abtnReport.BackgroundColor = Color.Transparent;
+            abtnReport.BorderColor = Color.FromArgb(124, 124, 124);
+            abtnReport.BorderRadius = 0;
+            abtnReport.BorderSize = 0;
+            abtnReport.Dock = DockStyle.Left;
+            abtnReport.FlatAppearance.BorderSize = 0;
+            abtnReport.FlatStyle = FlatStyle.Flat;
+            abtnReport.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            abtnReport.ForeColor = Color.FromArgb(124, 124, 124);
+            abtnReport.LineType = AControls.AButton.LineStyles.None;
+            abtnReport.Location = new Point(300, 0);
+            abtnReport.Margin = new Padding(3, 4, 3, 4);
+            abtnReport.Name = "abtnReport";
+            abtnReport.RoundType = AControls.AButton.RoundStyles.Full;
+            abtnReport.Size = new Size(150, 60);
+            abtnReport.TabIndex = 6;
+            abtnReport.Text = "Báo cáo";
+            abtnReport.TextColor = Color.FromArgb(124, 124, 124);
+            abtnReport.ThinknessLine = 5;
+            abtnReport.UseVisualStyleBackColor = false;
+            abtnReport.Click += abtnReport_Click;
             // 
             // aButton2
             // 
@@ -301,7 +302,7 @@
         private AControls.AButton abtnFlight;
         private AControls.AButton aButton2;
         private AControls.AButton abtnPlane;
-        private AControls.AButton aButton3;
+        private AControls.AButton abtnReport;
         private AControls.AButton aButton6;
         private AControls.AButton aButton5;
         private HomeAdminUC homeAdminuc1;
