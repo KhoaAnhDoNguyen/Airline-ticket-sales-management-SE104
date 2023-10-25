@@ -133,6 +133,26 @@ namespace Airline_ticket_sales_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_1 {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_2 {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ErrorIcon {
             get {
                 object obj = ResourceManager.GetObject("ErrorIcon", resourceCulture);
@@ -153,6 +173,16 @@ namespace Airline_ticket_sales_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hide {
+            get {
+                object obj = ResourceManager.GetObject("hide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HomeAdminImg_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("HomeAdminImg-removebg-preview", resourceCulture);
@@ -166,6 +196,16 @@ namespace Airline_ticket_sales_management.Properties {
         internal static System.Drawing.Bitmap InformationIcon {
             get {
                 object obj = ResourceManager.GetObject("InformationIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoginImage {
+            get {
+                object obj = ResourceManager.GetObject("LoginImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +286,16 @@ namespace Airline_ticket_sales_management.Properties {
         internal static System.Drawing.Bitmap TicketIcon {
             get {
                 object obj = ResourceManager.GetObject("TicketIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view {
+            get {
+                object obj = ResourceManager.GetObject("view", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

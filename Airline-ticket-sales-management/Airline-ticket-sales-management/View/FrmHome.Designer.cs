@@ -30,7 +30,7 @@
         {
             pnTop = new Panel();
             pnMenu = new Panel();
-            aButton6 = new AControls.AButton();
+            abtnSetting = new AControls.AButton();
             aButton5 = new AControls.AButton();
             abtnPlane = new AControls.AButton();
             abtnReport = new AControls.AButton();
@@ -63,7 +63,7 @@
             // pnMenu
             // 
             pnMenu.BackColor = Color.Transparent;
-            pnMenu.Controls.Add(aButton6);
+            pnMenu.Controls.Add(abtnSetting);
             pnMenu.Controls.Add(aButton5);
             pnMenu.Controls.Add(abtnPlane);
             pnMenu.Controls.Add(abtnReport);
@@ -75,29 +75,30 @@
             pnMenu.Size = new Size(900, 60);
             pnMenu.TabIndex = 3;
             // 
-            // aButton6
+            // abtnSetting
             // 
-            aButton6.BackColor = Color.Transparent;
-            aButton6.BackgroundColor = Color.Transparent;
-            aButton6.BorderColor = Color.FromArgb(124, 124, 124);
-            aButton6.BorderRadius = 0;
-            aButton6.BorderSize = 0;
-            aButton6.Dock = DockStyle.Left;
-            aButton6.FlatAppearance.BorderSize = 0;
-            aButton6.FlatStyle = FlatStyle.Flat;
-            aButton6.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            aButton6.ForeColor = Color.FromArgb(124, 124, 124);
-            aButton6.LineType = AControls.AButton.LineStyles.None;
-            aButton6.Location = new Point(750, 0);
-            aButton6.Margin = new Padding(3, 4, 3, 4);
-            aButton6.Name = "aButton6";
-            aButton6.RoundType = AControls.AButton.RoundStyles.Full;
-            aButton6.Size = new Size(150, 60);
-            aButton6.TabIndex = 9;
-            aButton6.Text = "Cài đặt";
-            aButton6.TextColor = Color.FromArgb(124, 124, 124);
-            aButton6.ThinknessLine = 5;
-            aButton6.UseVisualStyleBackColor = false;
+            abtnSetting.BackColor = Color.Transparent;
+            abtnSetting.BackgroundColor = Color.Transparent;
+            abtnSetting.BorderColor = Color.FromArgb(124, 124, 124);
+            abtnSetting.BorderRadius = 0;
+            abtnSetting.BorderSize = 0;
+            abtnSetting.Dock = DockStyle.Left;
+            abtnSetting.FlatAppearance.BorderSize = 0;
+            abtnSetting.FlatStyle = FlatStyle.Flat;
+            abtnSetting.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            abtnSetting.ForeColor = Color.FromArgb(124, 124, 124);
+            abtnSetting.LineType = AControls.AButton.LineStyles.None;
+            abtnSetting.Location = new Point(750, 0);
+            abtnSetting.Margin = new Padding(3, 4, 3, 4);
+            abtnSetting.Name = "abtnSetting";
+            abtnSetting.RoundType = AControls.AButton.RoundStyles.Full;
+            abtnSetting.Size = new Size(150, 60);
+            abtnSetting.TabIndex = 9;
+            abtnSetting.Text = "Cài đặt";
+            abtnSetting.TextColor = Color.FromArgb(124, 124, 124);
+            abtnSetting.ThinknessLine = 5;
+            abtnSetting.UseVisualStyleBackColor = false;
+            abtnSetting.Click += abtnSetting_Click;
             // 
             // aButton5
             // 
@@ -303,7 +304,7 @@
         private AControls.AButton aButton2;
         private AControls.AButton abtnPlane;
         private AControls.AButton abtnReport;
-        private AControls.AButton aButton6;
+        private AControls.AButton abtnSetting;
         private AControls.AButton aButton5;
         private HomeAdminUC homeAdminuc1;
     }

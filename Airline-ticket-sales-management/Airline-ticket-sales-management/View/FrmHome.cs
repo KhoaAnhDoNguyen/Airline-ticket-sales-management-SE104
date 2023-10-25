@@ -19,7 +19,6 @@ namespace Airline_ticket_sales_management
         public FrmHome()
         {
             InitializeComponent();
-            loadBody(new ReportUC());
         }
 
         private void loadBody(UserControl uc)
@@ -100,6 +99,21 @@ namespace Airline_ticket_sales_management
                 currentButton = abtnReport;
                 doActivateButton(currentButton);
                 loadBody(new ReportUC());
+            }
+        }
+
+        private void abtnSetting_Click(object sender, EventArgs e)
+        {
+            if (currentButton != abtnReport)
+            {
+                if (currentButton != null)
+                {
+                    doDeactivateButton(currentButton);
+                }
+
+                currentButton = abtnSetting;
+                doActivateButton(currentButton);
+                loadBody(new SettingUC());
             }
         }
     }

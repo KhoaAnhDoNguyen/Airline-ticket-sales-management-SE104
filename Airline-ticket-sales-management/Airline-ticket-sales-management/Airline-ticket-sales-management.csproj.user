@@ -16,7 +16,34 @@
     <Compile Update="AControls\AMessageBoxFrm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AControls\APanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="AControls\ATextboxUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Login\ForgotPassword1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Login\ForgotPassword3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Login\LoginUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Login\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Login\RegisterUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin\Setting\SettingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\AirportItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Usercontrols\TicketClassItemUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="View\Admin\Report\ReportByMonthUC.cs">
