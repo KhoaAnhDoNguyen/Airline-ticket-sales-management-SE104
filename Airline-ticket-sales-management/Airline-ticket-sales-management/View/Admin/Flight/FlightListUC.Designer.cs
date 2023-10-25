@@ -52,6 +52,7 @@
             aTextboxUC2 = new AControls.ATextboxUC();
             aTextboxUC1 = new AControls.ATextboxUC();
             aButton1 = new AControls.AButton();
+            aDateTimePicker1 = new AControls.ADateTimePicker();
             pnHeader.SuspendLayout();
             panel1.SuspendLayout();
             panel9.SuspendLayout();
@@ -290,7 +291,7 @@
             aTextboxUC3.BorderSize = 2;
             aTextboxUC3.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             aTextboxUC3.ForeColor = Color.DimGray;
-            aTextboxUC3.Location = new Point(672, 30);
+            aTextboxUC3.Location = new Point(675, 30);
             aTextboxUC3.Margin = new Padding(4, 5, 4, 5);
             aTextboxUC3.Multiline = false;
             aTextboxUC3.Name = "aTextboxUC3";
@@ -313,7 +314,7 @@
             aTextboxUC2.BorderSize = 2;
             aTextboxUC2.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             aTextboxUC2.ForeColor = Color.DimGray;
-            aTextboxUC2.Location = new Point(464, 30);
+            aTextboxUC2.Location = new Point(467, 30);
             aTextboxUC2.Margin = new Padding(4, 5, 4, 5);
             aTextboxUC2.Multiline = false;
             aTextboxUC2.Name = "aTextboxUC2";
@@ -374,11 +375,27 @@
             aButton1.ThinknessLine = 0;
             aButton1.UseVisualStyleBackColor = false;
             // 
+            // aDateTimePicker1
+            // 
+            aDateTimePicker1.BorderColor = Color.FromArgb(3, 4, 94);
+            aDateTimePicker1.BorderSize = 2;
+            aDateTimePicker1.Cursor = Cursors.Hand;
+            aDateTimePicker1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            aDateTimePicker1.Format = DateTimePickerFormat.Short;
+            aDateTimePicker1.Location = new Point(260, 33);
+            aDateTimePicker1.MinimumSize = new Size(0, 35);
+            aDateTimePicker1.Name = "aDateTimePicker1";
+            aDateTimePicker1.Size = new Size(200, 35);
+            aDateTimePicker1.SkinColor = Color.White;
+            aDateTimePicker1.TabIndex = 6;
+            aDateTimePicker1.TextColor = Color.Black;
+            // 
             // FlightListUC
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 245, 248);
+            Controls.Add(aDateTimePicker1);
             Controls.Add(pnHeader);
             Controls.Add(pnFlightList);
             Controls.Add(aButton1);
@@ -437,5 +454,6 @@
         private Label label4;
         private Label label3;
         private Label label2;
+        private AControls.ADateTimePicker aDateTimePicker1;
     }
 }

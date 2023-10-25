@@ -28,56 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.aTextboxUC1 = new Airline_ticket_sales_management.AControls.ATextboxUC();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
+            aTextboxUC1 = new AControls.ATextboxUC();
+            panel1 = new Panel();
+            SuspendLayout();
             // 
             // aTextboxUC1
             // 
-            this.aTextboxUC1.BackColor = System.Drawing.Color.White;
-            this.aTextboxUC1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(4)))), ((int)(((byte)(94)))));
-            this.aTextboxUC1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(138)))), ((int)(((byte)(184)))));
-            this.aTextboxUC1.BorderRadius = 5;
-            this.aTextboxUC1.BorderSize = 2;
-            this.aTextboxUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aTextboxUC1.ForeColor = System.Drawing.Color.DimGray;
-            this.aTextboxUC1.Location = new System.Drawing.Point(50, 30);
-            this.aTextboxUC1.Margin = new System.Windows.Forms.Padding(4);
-            this.aTextboxUC1.Multiline = false;
-            this.aTextboxUC1.Name = "aTextboxUC1";
-            this.aTextboxUC1.Padding = new System.Windows.Forms.Padding(7);
-            this.aTextboxUC1.PasswordChar = false;
-            this.aTextboxUC1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.aTextboxUC1.PlaceholderText = "Tên máy bay";
-            this.aTextboxUC1.RoundType = Airline_ticket_sales_management.AControls.ATextboxUC.RoundStyles.Full;
-            this.aTextboxUC1.Size = new System.Drawing.Size(200, 37);
-            this.aTextboxUC1.TabIndex = 0;
-            this.aTextboxUC1.Texts = "";
-            this.aTextboxUC1.UnderlinedStyle = false;
+            aTextboxUC1.BackColor = Color.White;
+            aTextboxUC1.BorderColor = Color.FromArgb(3, 4, 94);
+            aTextboxUC1.BorderFocusColor = Color.FromArgb(0, 138, 184);
+            aTextboxUC1.BorderRadius = 5;
+            aTextboxUC1.BorderSize = 2;
+            aTextboxUC1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            aTextboxUC1.ForeColor = Color.DimGray;
+            aTextboxUC1.Location = new Point(50, 38);
+            aTextboxUC1.Margin = new Padding(4, 5, 4, 5);
+            aTextboxUC1.Multiline = false;
+            aTextboxUC1.Name = "aTextboxUC1";
+            aTextboxUC1.Padding = new Padding(7, 9, 7, 9);
+            aTextboxUC1.PasswordChar = false;
+            aTextboxUC1.PlaceholderColor = Color.DarkGray;
+            aTextboxUC1.PlaceholderText = "Tên máy bay";
+            aTextboxUC1.RoundType = AControls.ATextboxUC.RoundStyles.Full;
+            aTextboxUC1.Size = new Size(200, 41);
+            aTextboxUC1.TabIndex = 0;
+            aTextboxUC1.Texts = "";
+            aTextboxUC1.UnderlinedStyle = false;
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(350, 30);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 499);
-            this.panel1.TabIndex = 1;
+            panel1.Location = new Point(350, 38);
+            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1100, 624);
+            panel1.TabIndex = 1;
             // 
-            // CreatePlaneUC
+            // OperationPlaneUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(248)))));
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.aTextboxUC1);
-            this.Name = "CreatePlaneUC";
-            this.Size = new System.Drawing.Size(1500, 600);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(245, 245, 248);
+            Controls.Add(panel1);
+            Controls.Add(aTextboxUC1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "OperationPlaneUC";
+            Size = new Size(1500, 750);
+            ResumeLayout(false);
         }
 
         #endregion
 
         private AControls.ATextboxUC aTextboxUC1;
-        private System.Windows.Forms.Panel panel1;
+        private Panel panel1;
     }
 }

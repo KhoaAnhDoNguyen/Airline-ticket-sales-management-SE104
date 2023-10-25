@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             pibClose = new PictureBox();
-            apnMain = new AControls.APanel();
             pictureBox2 = new PictureBox();
             aCircularPictureBox1 = new AControls.ACircularPictureBox();
+            apnMain = new AControls.APanel();
             loginuc1 = new LoginUC();
             ((System.ComponentModel.ISupportInitialize)pibClose).BeginInit();
-            apnMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)aCircularPictureBox1).BeginInit();
+            apnMain.SuspendLayout();
             SuspendLayout();
             // 
             // pibClose
@@ -44,34 +44,20 @@
             pibClose.BackgroundImage = Properties.Resources.CloseIcon2;
             pibClose.BackgroundImageLayout = ImageLayout.Stretch;
             pibClose.Cursor = Cursors.Hand;
-            pibClose.Location = new Point(1310, 12);
+            pibClose.Location = new Point(1331, 12);
+            pibClose.Margin = new Padding(2, 3, 2, 3);
             pibClose.Name = "pibClose";
-            pibClose.Size = new Size(30, 30);
+            pibClose.Size = new Size(24, 27);
             pibClose.TabIndex = 0;
             pibClose.TabStop = false;
             pibClose.Click += pibClose_Click;
-            // 
-            // apnMain
-            // 
-            apnMain.BackColor = Color.White;
-            apnMain.BackgroundColor = Color.White;
-            apnMain.BorderColor = Color.PaleVioletRed;
-            apnMain.BorderRadius = 50;
-            apnMain.BorderSize = 0;
-            apnMain.Controls.Add(loginuc1);
-            apnMain.ForeColor = Color.Black;
-            apnMain.Location = new Point(100, 50);
-            apnMain.Name = "apnMain";
-            apnMain.RoundType = AControls.APanel.RoundStyles.Full;
-            apnMain.Size = new Size(500, 668);
-            apnMain.TabIndex = 1;
-            apnMain.TextColor = Color.Black;
             // 
             // pictureBox2
             // 
             pictureBox2.BackgroundImage = Properties.Resources.Ellipse_2;
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(766, 134);
+            pictureBox2.Location = new Point(766, 167);
+            pictureBox2.Margin = new Padding(2, 3, 2, 3);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(500, 500);
             pictureBox2.TabIndex = 2;
@@ -88,26 +74,43 @@
             aCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             aCircularPictureBox1.BorderSize = 0;
             aCircularPictureBox1.GradientAngle = 50F;
-            aCircularPictureBox1.Location = new Point(786, 154);
+            aCircularPictureBox1.Location = new Point(786, 187);
+            aCircularPictureBox1.Margin = new Padding(2, 3, 2, 3);
             aCircularPictureBox1.Name = "aCircularPictureBox1";
             aCircularPictureBox1.Size = new Size(460, 460);
             aCircularPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             aCircularPictureBox1.TabIndex = 3;
             aCircularPictureBox1.TabStop = false;
             // 
+            // apnMain
+            // 
+            apnMain.BackColor = Color.White;
+            apnMain.BackgroundColor = Color.White;
+            apnMain.BorderColor = Color.PaleVioletRed;
+            apnMain.BorderRadius = 50;
+            apnMain.BorderSize = 0;
+            apnMain.Controls.Add(loginuc1);
+            apnMain.ForeColor = Color.Black;
+            apnMain.Location = new Point(100, 50);
+            apnMain.Margin = new Padding(2, 3, 2, 3);
+            apnMain.Name = "apnMain";
+            apnMain.RoundType = AControls.APanel.RoundStyles.Full;
+            apnMain.Size = new Size(500, 668);
+            apnMain.TabIndex = 1;
+            apnMain.TextColor = Color.Black;
+            // 
             // loginuc1
             // 
             loginuc1.BackColor = Color.White;
             loginuc1.Dock = DockStyle.Fill;
             loginuc1.Location = new Point(0, 0);
-            loginuc1.Margin = new Padding(4, 3, 4, 3);
             loginuc1.Name = "loginuc1";
             loginuc1.Size = new Size(500, 668);
             loginuc1.TabIndex = 0;
             // 
             // FrmLogin
             // 
-            AutoScaleDimensions = new SizeF(10F, 22F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(97, 114, 243);
             ClientSize = new Size(1366, 768);
@@ -115,25 +118,24 @@
             Controls.Add(pictureBox2);
             Controls.Add(apnMain);
             Controls.Add(pibClose);
-            Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 3, 4, 3);
             Name = "FrmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmLogin";
             ((System.ComponentModel.ISupportInitialize)pibClose).EndInit();
-            apnMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)aCircularPictureBox1).EndInit();
+            apnMain.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private PictureBox pibClose;
-        private AControls.APanel apnMain;
         private PictureBox pictureBox2;
         private AControls.ACircularPictureBox aCircularPictureBox1;
+        private AControls.APanel apnMain;
         private LoginUC loginuc1;
     }
 }

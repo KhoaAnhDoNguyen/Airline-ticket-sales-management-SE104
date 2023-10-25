@@ -51,7 +51,7 @@
             aTextboxuc3.Cursor = Cursors.IBeam;
             aTextboxuc3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             aTextboxuc3.ForeColor = Color.Black;
-            aTextboxuc3.Location = new Point(110, 317);
+            aTextboxuc3.Location = new Point(110, 343);
             aTextboxuc3.Margin = new Padding(4);
             aTextboxuc3.Multiline = false;
             aTextboxuc3.Name = "aTextboxuc3";
@@ -71,7 +71,7 @@
             pictureBox1.BackgroundImage = Properties.Resources.hide;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Cursor = Cursors.Hand;
-            pictureBox1.Location = new Point(361, 320);
+            pictureBox1.Location = new Point(361, 346);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(32, 32);
             pictureBox1.TabIndex = 27;
@@ -87,7 +87,7 @@
             aTextboxuc4.Cursor = Cursors.IBeam;
             aTextboxuc4.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             aTextboxuc4.ForeColor = Color.Black;
-            aTextboxuc4.Location = new Point(100, 316);
+            aTextboxuc4.Location = new Point(100, 342);
             aTextboxuc4.Margin = new Padding(4);
             aTextboxuc4.Multiline = false;
             aTextboxuc4.Name = "aTextboxuc4";
@@ -111,7 +111,7 @@
             atxbPassword2.Cursor = Cursors.IBeam;
             atxbPassword2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             atxbPassword2.ForeColor = Color.Black;
-            atxbPassword2.Location = new Point(110, 267);
+            atxbPassword2.Location = new Point(110, 293);
             atxbPassword2.Margin = new Padding(4);
             atxbPassword2.Multiline = false;
             atxbPassword2.Name = "atxbPassword2";
@@ -131,7 +131,7 @@
             pibHideViewPassword.BackgroundImage = Properties.Resources.hide;
             pibHideViewPassword.BackgroundImageLayout = ImageLayout.Stretch;
             pibHideViewPassword.Cursor = Cursors.Hand;
-            pibHideViewPassword.Location = new Point(361, 270);
+            pibHideViewPassword.Location = new Point(361, 296);
             pibHideViewPassword.Name = "pibHideViewPassword";
             pibHideViewPassword.Size = new Size(32, 32);
             pibHideViewPassword.TabIndex = 23;
@@ -150,7 +150,7 @@
             abtnSubmit.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             abtnSubmit.ForeColor = Color.White;
             abtnSubmit.LineType = AControls.AButton.LineStyles.None;
-            abtnSubmit.Location = new Point(100, 366);
+            abtnSubmit.Location = new Point(100, 392);
             abtnSubmit.Name = "abtnSubmit";
             abtnSubmit.RoundType = AControls.AButton.RoundStyles.Full;
             abtnSubmit.Size = new Size(300, 37);
@@ -171,7 +171,7 @@
             atxbPassword1.Cursor = Cursors.IBeam;
             atxbPassword1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             atxbPassword1.ForeColor = Color.Black;
-            atxbPassword1.Location = new Point(100, 266);
+            atxbPassword1.Location = new Point(100, 292);
             atxbPassword1.Margin = new Padding(4);
             atxbPassword1.Multiline = false;
             atxbPassword1.Name = "atxbPassword1";
@@ -190,7 +190,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(113, 113, 122);
-            label1.Location = new Point(104, 236);
+            label1.Location = new Point(104, 262);
             label1.Name = "label1";
             label1.Size = new Size(303, 18);
             label1.TabIndex = 30;
@@ -200,7 +200,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(100, 198);
+            label4.Location = new Point(100, 224);
             label4.MaximumSize = new Size(330, 0);
             label4.Name = "label4";
             label4.Size = new Size(292, 35);

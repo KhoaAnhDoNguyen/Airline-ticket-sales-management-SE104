@@ -80,7 +80,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(169, 215);
+            label4.Location = new Point(165, 215);
             label4.MaximumSize = new Size(330, 0);
             label4.Name = "label4";
             label4.Size = new Size(169, 35);

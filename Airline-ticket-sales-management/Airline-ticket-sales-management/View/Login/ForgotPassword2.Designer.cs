@@ -42,7 +42,7 @@
             lbReturn.AutoSize = true;
             lbReturn.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             lbReturn.ForeColor = Color.FromArgb(113, 113, 122);
-            lbReturn.Location = new Point(82, 434);
+            lbReturn.Location = new Point(100, 434);
             lbReturn.Name = "lbReturn";
             lbReturn.Size = new Size(61, 18);
             lbReturn.TabIndex = 27;
@@ -53,7 +53,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(113, 113, 122);
-            label1.Location = new Point(82, 279);
+            label1.Location = new Point(100, 279);
             label1.Name = "label1";
             label1.Size = new Size(138, 18);
             label1.TabIndex = 26;
@@ -69,7 +69,7 @@
             aTextboxuc2.Cursor = Cursors.IBeam;
             aTextboxuc2.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             aTextboxuc2.ForeColor = Color.Black;
-            aTextboxuc2.Location = new Point(82, 310);
+            aTextboxuc2.Location = new Point(100, 310);
             aTextboxuc2.Margin = new Padding(4);
             aTextboxuc2.Multiline = false;
             aTextboxuc2.Name = "aTextboxuc2";
@@ -87,7 +87,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(78, 241);
+            label4.Location = new Point(96, 241);
             label4.MaximumSize = new Size(330, 0);
             label4.Name = "label4";
             label4.Size = new Size(210, 35);
@@ -107,7 +107,7 @@
             abtnGetOTP.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             abtnGetOTP.ForeColor = Color.White;
             abtnGetOTP.LineType = AControls.AButton.LineStyles.None;
-            abtnGetOTP.Location = new Point(82, 360);
+            abtnGetOTP.Location = new Point(100, 360);
             abtnGetOTP.Name = "abtnGetOTP";
             abtnGetOTP.RoundType = AControls.AButton.RoundStyles.Full;
             abtnGetOTP.Size = new Size(300, 37);
@@ -123,7 +123,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(128, 152, 249);
-            label2.Location = new Point(216, 279);
+            label2.Location = new Point(234, 279);
             label2.Name = "label2";
             label2.Size = new Size(138, 18);
             label2.TabIndex = 28;
@@ -134,7 +134,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(128, 152, 249);
-            label3.Location = new Point(193, 409);
+            label3.Location = new Point(211, 409);
             label3.Name = "label3";
             label3.Size = new Size(84, 18);
             label3.TabIndex = 29;
