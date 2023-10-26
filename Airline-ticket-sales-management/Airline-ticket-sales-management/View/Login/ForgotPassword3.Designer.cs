@@ -142,7 +142,7 @@
             abtnSubmit.BackColor = Color.FromArgb(128, 152, 249);
             abtnSubmit.BackgroundColor = Color.FromArgb(128, 152, 249);
             abtnSubmit.BorderColor = Color.PaleVioletRed;
-            abtnSubmit.BorderRadius = 10;
+            abtnSubmit.BorderRadius = 20;
             abtnSubmit.BorderSize = 0;
             abtnSubmit.Cursor = Cursors.Hand;
             abtnSubmit.FlatAppearance.BorderSize = 0;

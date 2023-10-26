@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,16 +16,34 @@ namespace Airline_ticket_sales_management
     public partial class FrmHome : Form
     {
         private AButton currentButton = null;
+        private UserControl oldBody = null;
 
         public FrmHome()
         {
             InitializeComponent();
+            loadBody(new HomeAdminUC());
+        }
+
+        public void hideLoad()
+        {
+            pibLoad.Visible = false;
+        }
+
+        public void viewLoad()
+        {
+            pibLoad.BringToFront();
+            pibLoad.Visible = true;
         }
 
         private void loadBody(UserControl uc)
         {
-            pnBody.Controls.Clear();
+            if (oldBody != null)
+            {
+                pnBody.Controls.Remove(oldBody);
+            }
+
             pnBody.Controls.Add(uc);
+            oldBody = uc;
         }
 
         private void pcbClose_Click(object sender, EventArgs e)
@@ -115,6 +134,16 @@ namespace Airline_ticket_sales_management
                 doActivateButton(currentButton);
                 loadBody(new SettingUC());
             }
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            GraphicsPath path = RoundedRectangle.Create(this.Width, this.Height, 40);
+
+            // Đặt Region cho Form để tạo hình dạng bo tròn
+            this.Region = new Region(path);
         }
     }
 }

@@ -39,12 +39,13 @@
             pcbClose = new PictureBox();
             pcbLogo = new PictureBox();
             pnBody = new Panel();
-            homeAdminuc1 = new HomeAdminUC();
+            pibLoad = new PictureBox();
             pnTop.SuspendLayout();
             pnMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbClose).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
             pnBody.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pibLoad).BeginInit();
             SuspendLayout();
             // 
             // pnTop
@@ -252,7 +253,7 @@
             // pnBody
             // 
             pnBody.BackColor = Color.Transparent;
-            pnBody.Controls.Add(homeAdminuc1);
+            pnBody.Controls.Add(pibLoad);
             pnBody.Dock = DockStyle.Fill;
             pnBody.Location = new Point(0, 125);
             pnBody.Margin = new Padding(3, 4, 3, 4);
@@ -260,15 +261,16 @@
             pnBody.Size = new Size(1500, 825);
             pnBody.TabIndex = 2;
             // 
-            // homeAdminuc1
+            // pibLoad
             // 
-            homeAdminuc1.BackColor = Color.FromArgb(245, 245, 248);
-            homeAdminuc1.Dock = DockStyle.Fill;
-            homeAdminuc1.Location = new Point(0, 0);
-            homeAdminuc1.Margin = new Padding(3, 4, 3, 4);
-            homeAdminuc1.Name = "homeAdminuc1";
-            homeAdminuc1.Size = new Size(1500, 825);
-            homeAdminuc1.TabIndex = 0;
+            pibLoad.BackgroundImageLayout = ImageLayout.Stretch;
+            pibLoad.Image = Properties.Resources.load625;
+            pibLoad.Location = new Point(437, 100);
+            pibLoad.Name = "pibLoad";
+            pibLoad.Size = new Size(625, 625);
+            pibLoad.TabIndex = 4;
+            pibLoad.TabStop = false;
+            pibLoad.Visible = false;
             // 
             // FrmHome
             // 
@@ -290,6 +292,7 @@
             ((System.ComponentModel.ISupportInitialize)pcbClose).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).EndInit();
             pnBody.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pibLoad).EndInit();
             ResumeLayout(false);
         }
 
@@ -306,7 +309,7 @@
         private AControls.AButton abtnReport;
         private AControls.AButton abtnSetting;
         private AControls.AButton aButton5;
-        private HomeAdminUC homeAdminuc1;
+        private PictureBox pibLoad;
     }
 }
 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Airline_ticket_sales_management.Usercontrols;
+using Airline_ticket_sales_management.Utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,42 @@ namespace Airline_ticket_sales_management
         public OperationPlaneUC()
         {
             InitializeComponent();
+        }
+
+        private void OperationPlaneUC_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                PlaneSeatItemUC uc = new PlaneSeatItemUC();
+                pnSeat.Controls.Add(uc);
+                uc.BringToFront();
+                uc.Dock = DockStyle.Top;
+
+                Panel pn = new Panel();
+                pnSeat.Controls.Add(pn);
+                pn.Height = 5;
+                pn.BackColor = Color.Transparent;
+                pn.BringToFront();
+                pn.Dock = DockStyle.Top;
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+                PlaneTicketClassItemUC uc = new PlaneTicketClassItemUC();
+                pnTicketClass.Controls.Add(uc);
+                uc.BackColor = ColorTranslator.FromHtml(ColorCodes.ColorList[i]);
+                uc.BringToFront();
+                uc.Dock = DockStyle.Top;
+
+                Panel pn = new Panel();
+                pnTicketClass.Controls.Add(pn);
+                pn.Height = 2;
+                pn.BackColor = Color.Transparent;
+                pn.BringToFront();
+                pn.Dock = DockStyle.Top;
+
+
+            }
         }
     }
 }

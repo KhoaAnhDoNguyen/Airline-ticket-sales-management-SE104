@@ -22,6 +22,9 @@
     <Compile Update="AControls\ATextboxUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Usercontrols\PlaneTicketClassItemUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="View\Login\ForgotPassword1.cs">
       <SubType>UserControl</SubType>
     </Compile>

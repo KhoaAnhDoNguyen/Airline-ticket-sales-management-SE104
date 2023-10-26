@@ -92,7 +92,7 @@
             abtnLogin.BackColor = Color.FromArgb(128, 152, 249);
             abtnLogin.BackgroundColor = Color.FromArgb(128, 152, 249);
             abtnLogin.BorderColor = Color.PaleVioletRed;
-            abtnLogin.BorderRadius = 10;
+            abtnLogin.BorderRadius = 20;
             abtnLogin.BorderSize = 0;
             abtnLogin.Cursor = Cursors.Hand;
             abtnLogin.FlatAppearance.BorderSize = 0;

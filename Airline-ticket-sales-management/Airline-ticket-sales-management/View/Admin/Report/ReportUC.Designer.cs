@@ -31,6 +31,7 @@
             aDateTimePicker1 = new AControls.ADateTimePicker();
             acbTypeReport = new AControls.AComboBox();
             pnBodyReport = new Panel();
+            aButton1 = new AControls.AButton();
             SuspendLayout();
             // 
             // aDateTimePicker1
@@ -78,11 +79,34 @@
             pnBodyReport.Size = new Size(1500, 755);
             pnBodyReport.TabIndex = 3;
             // 
+            // aButton1
+            // 
+            aButton1.BackColor = Color.FromArgb(20, 124, 68);
+            aButton1.BackgroundColor = Color.FromArgb(20, 124, 68);
+            aButton1.BorderColor = Color.PaleVioletRed;
+            aButton1.BorderRadius = 20;
+            aButton1.BorderSize = 0;
+            aButton1.FlatAppearance.BorderSize = 0;
+            aButton1.FlatStyle = FlatStyle.Flat;
+            aButton1.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            aButton1.ForeColor = Color.White;
+            aButton1.LineType = AControls.AButton.LineStyles.None;
+            aButton1.Location = new Point(1250, 30);
+            aButton1.Name = "aButton1";
+            aButton1.RoundType = AControls.AButton.RoundStyles.Full;
+            aButton1.Size = new Size(200, 40);
+            aButton1.TabIndex = 4;
+            aButton1.Text = "Xuất excel";
+            aButton1.TextColor = Color.White;
+            aButton1.ThinknessLine = 0;
+            aButton1.UseVisualStyleBackColor = false;
+            // 
             // ReportUC
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 245, 248);
+            Controls.Add(aButton1);
             Controls.Add(pnBodyReport);
             Controls.Add(acbTypeReport);
             Controls.Add(aDateTimePicker1);
@@ -96,5 +120,6 @@
         private AControls.ADateTimePicker aDateTimePicker1;
         private AControls.AComboBox acbTypeReport;
         private Panel pnBodyReport;
+        private AControls.AButton aButton1;
     }
 }

@@ -97,7 +97,7 @@
             abtnRegsiter.BackColor = Color.FromArgb(128, 152, 249);
             abtnRegsiter.BackgroundColor = Color.FromArgb(128, 152, 249);
             abtnRegsiter.BorderColor = Color.PaleVioletRed;
-            abtnRegsiter.BorderRadius = 10;
+            abtnRegsiter.BorderRadius = 20;
             abtnRegsiter.BorderSize = 0;
             abtnRegsiter.Cursor = Cursors.Hand;
             abtnRegsiter.FlatAppearance.BorderSize = 0;

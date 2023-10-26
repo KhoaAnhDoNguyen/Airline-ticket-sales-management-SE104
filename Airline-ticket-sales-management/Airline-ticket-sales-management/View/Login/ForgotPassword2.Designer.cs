@@ -99,7 +99,7 @@
             abtnGetOTP.BackColor = Color.FromArgb(128, 152, 249);
             abtnGetOTP.BackgroundColor = Color.FromArgb(128, 152, 249);
             abtnGetOTP.BorderColor = Color.PaleVioletRed;
-            abtnGetOTP.BorderRadius = 10;
+            abtnGetOTP.BorderRadius = 20;
             abtnGetOTP.BorderSize = 0;
             abtnGetOTP.Cursor = Cursors.Hand;
             abtnGetOTP.FlatAppearance.BorderSize = 0;

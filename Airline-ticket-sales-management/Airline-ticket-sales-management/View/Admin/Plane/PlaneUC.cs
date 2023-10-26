@@ -42,20 +42,38 @@ namespace Airline_ticket_sales_management
 
         private void abtnPlaneList_Click(object sender, EventArgs e)
         {
-            doDeactivateAbtn(currentAbtn);
-            currentAbtn = sender as AButton;
+            if (currentAbtn != abtnPlaneList) 
+            {
+                doDeactivateAbtn(currentAbtn);
+                currentAbtn = abtnPlaneList;
 
-            doActivateAbtn(currentAbtn);
-            loadBody(new PlaneListUC());
+                doActivateAbtn(currentAbtn);
+                loadBody(new PlaneListUC());
+            }
         }
 
         private void abtnCreatePlane_Click(object sender, EventArgs e)
         {
-            doDeactivateAbtn(currentAbtn);
-            currentAbtn = sender as AButton;
+            if (currentAbtn != abtnCreatePlane)
+            {
+                doDeactivateAbtn(currentAbtn);
+                currentAbtn = abtnCreatePlane;
 
-            doActivateAbtn(currentAbtn);
-            loadBody(new OperationPlaneUC());
+                doActivateAbtn(currentAbtn);
+                loadBody(new OperationPlaneUC());
+            }
+        }
+
+        private void abtnDetailPlane_Click(object sender, EventArgs e)
+        {
+            if (currentAbtn != abtnDetailPlane)
+            {
+                doDeactivateAbtn(currentAbtn);
+                currentAbtn = abtnDetailPlane;
+
+                doActivateAbtn(currentAbtn);
+                loadBody(new OperationPlaneUC());
+            }
         }
     }
 }

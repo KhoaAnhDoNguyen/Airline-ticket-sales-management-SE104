@@ -15,6 +15,7 @@ namespace Airline_ticket_sales_management
         public ReportUC()
         {
             InitializeComponent();
+            acbTypeReport.SelectedIndex = 0;
         }
 
         private void loadBody(UserControl uc)

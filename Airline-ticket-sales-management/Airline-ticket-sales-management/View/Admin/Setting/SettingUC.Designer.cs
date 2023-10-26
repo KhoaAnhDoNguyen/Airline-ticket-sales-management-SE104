@@ -128,7 +128,7 @@
             aButton1.BackColor = Color.FromArgb(3, 4, 94);
             aButton1.BackgroundColor = Color.FromArgb(3, 4, 94);
             aButton1.BorderColor = Color.PaleVioletRed;
-            aButton1.BorderRadius = 15;
+            aButton1.BorderRadius = 20;
             aButton1.BorderSize = 0;
             aButton1.FlatAppearance.BorderSize = 0;
             aButton1.FlatStyle = FlatStyle.Flat;
@@ -424,7 +424,7 @@
             aButton2.BackColor = Color.FromArgb(3, 4, 94);
             aButton2.BackgroundColor = Color.FromArgb(3, 4, 94);
             aButton2.BorderColor = Color.PaleVioletRed;
-            aButton2.BorderRadius = 15;
+            aButton2.BorderRadius = 20;
             aButton2.BorderSize = 0;
             aButton2.FlatAppearance.BorderSize = 0;
             aButton2.FlatStyle = FlatStyle.Flat;
@@ -663,7 +663,7 @@
             aButton3.BackColor = Color.FromArgb(3, 4, 94);
             aButton3.BackgroundColor = Color.FromArgb(3, 4, 94);
             aButton3.BorderColor = Color.PaleVioletRed;
-            aButton3.BorderRadius = 15;
+            aButton3.BorderRadius = 20;
             aButton3.BorderSize = 0;
             aButton3.FlatAppearance.BorderSize = 0;
             aButton3.FlatStyle = FlatStyle.Flat;

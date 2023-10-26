@@ -34,9 +34,7 @@
             aButton1 = new AControls.AButton();
             aButton2 = new AControls.AButton();
             pnBodyFlight = new Panel();
-            flightListUC = new FlightListUC();
             pnMenuFlight.SuspendLayout();
-            pnBodyFlight.SuspendLayout();
             SuspendLayout();
             // 
             // pnMenuFlight
@@ -134,24 +132,12 @@
             // pnBodyFlight
             // 
             pnBodyFlight.BackColor = Color.Transparent;
-            pnBodyFlight.Controls.Add(flightListUC);
             pnBodyFlight.Dock = DockStyle.Fill;
             pnBodyFlight.Location = new Point(0, 105);
             pnBodyFlight.Margin = new Padding(3, 4, 3, 4);
             pnBodyFlight.Name = "pnBodyFlight";
             pnBodyFlight.Size = new Size(1500, 720);
             pnBodyFlight.TabIndex = 3;
-            // 
-            // flightListUC
-            // 
-            flightListUC.BackColor = Color.FromArgb(245, 245, 248);
-            flightListUC.Dock = DockStyle.Fill;
-            flightListUC.ForeColor = Color.FromArgb(3, 4, 94);
-            flightListUC.Location = new Point(0, 0);
-            flightListUC.Margin = new Padding(3, 5, 3, 5);
-            flightListUC.Name = "flightListUC";
-            flightListUC.Size = new Size(1500, 720);
-            flightListUC.TabIndex = 0;
             // 
             // FlightUC
             // 
@@ -164,9 +150,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "FlightUC";
             Size = new Size(1500, 825);
-            Load += FlightUC_Load;
             pnMenuFlight.ResumeLayout(false);
-            pnBodyFlight.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -177,6 +161,5 @@
         private AControls.AButton aButton3;
         private Panel pnLine;
         private Panel pnBodyFlight;
-        private FlightListUC flightListUC;
     }
 }

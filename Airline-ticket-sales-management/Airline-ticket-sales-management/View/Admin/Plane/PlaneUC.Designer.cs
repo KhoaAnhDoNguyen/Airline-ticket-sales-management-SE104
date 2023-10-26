@@ -30,7 +30,7 @@
         {
             pnMenuPlane = new Panel();
             pnLine = new Panel();
-            aButton3 = new AControls.AButton();
+            abtnDetailPlane = new AControls.AButton();
             abtnCreatePlane = new AControls.AButton();
             abtnPlaneList = new AControls.AButton();
             pnBodyPlane = new Panel();
@@ -43,7 +43,7 @@
             // 
             pnMenuPlane.BackColor = Color.Transparent;
             pnMenuPlane.Controls.Add(pnLine);
-            pnMenuPlane.Controls.Add(aButton3);
+            pnMenuPlane.Controls.Add(abtnDetailPlane);
             pnMenuPlane.Controls.Add(abtnCreatePlane);
             pnMenuPlane.Controls.Add(abtnPlaneList);
             pnMenuPlane.Dock = DockStyle.Top;
@@ -62,28 +62,29 @@
             pnLine.Size = new Size(1398, 2);
             pnLine.TabIndex = 3;
             // 
-            // aButton3
+            // abtnDetailPlane
             // 
-            aButton3.BackColor = Color.Transparent;
-            aButton3.BackgroundColor = Color.Transparent;
-            aButton3.BorderColor = Color.FromArgb(3, 4, 94);
-            aButton3.BorderRadius = 30;
-            aButton3.BorderSize = 2;
-            aButton3.FlatAppearance.BorderSize = 0;
-            aButton3.FlatStyle = FlatStyle.Flat;
-            aButton3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            aButton3.ForeColor = Color.FromArgb(3, 4, 94);
-            aButton3.LineType = AControls.AButton.LineStyles.None;
-            aButton3.Location = new Point(1330, 30);
-            aButton3.Margin = new Padding(3, 4, 3, 4);
-            aButton3.Name = "aButton3";
-            aButton3.RoundType = AControls.AButton.RoundStyles.Top;
-            aButton3.Size = new Size(120, 75);
-            aButton3.TabIndex = 2;
-            aButton3.Text = "Chi tiết máy bay";
-            aButton3.TextColor = Color.FromArgb(3, 4, 94);
-            aButton3.ThinknessLine = 0;
-            aButton3.UseVisualStyleBackColor = false;
+            abtnDetailPlane.BackColor = Color.Transparent;
+            abtnDetailPlane.BackgroundColor = Color.Transparent;
+            abtnDetailPlane.BorderColor = Color.FromArgb(3, 4, 94);
+            abtnDetailPlane.BorderRadius = 30;
+            abtnDetailPlane.BorderSize = 2;
+            abtnDetailPlane.FlatAppearance.BorderSize = 0;
+            abtnDetailPlane.FlatStyle = FlatStyle.Flat;
+            abtnDetailPlane.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            abtnDetailPlane.ForeColor = Color.FromArgb(3, 4, 94);
+            abtnDetailPlane.LineType = AControls.AButton.LineStyles.None;
+            abtnDetailPlane.Location = new Point(1340, 30);
+            abtnDetailPlane.Margin = new Padding(3, 4, 3, 4);
+            abtnDetailPlane.Name = "abtnDetailPlane";
+            abtnDetailPlane.RoundType = AControls.AButton.RoundStyles.Top;
+            abtnDetailPlane.Size = new Size(110, 75);
+            abtnDetailPlane.TabIndex = 2;
+            abtnDetailPlane.Text = "Chi tiết máy bay";
+            abtnDetailPlane.TextColor = Color.FromArgb(3, 4, 94);
+            abtnDetailPlane.ThinknessLine = 0;
+            abtnDetailPlane.UseVisualStyleBackColor = false;
+            abtnDetailPlane.Click += abtnDetailPlane_Click;
             // 
             // abtnCreatePlane
             // 
@@ -173,7 +174,7 @@
 
         private Panel pnMenuPlane;
         private Panel pnLine;
-        private AControls.AButton aButton3;
+        private AControls.AButton abtnDetailPlane;
         private AControls.AButton abtnCreatePlane;
         private AControls.AButton abtnPlaneList;
         private Panel pnBodyPlane;
