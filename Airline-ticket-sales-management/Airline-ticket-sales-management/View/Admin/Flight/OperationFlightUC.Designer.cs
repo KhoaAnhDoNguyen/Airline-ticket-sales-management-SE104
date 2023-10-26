@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             aTextboxuc3 = new AControls.ATextboxUC();
-            aTextboxuc2 = new AControls.ATextboxUC();
             panel5 = new Panel();
-            aTextboxuc1 = new AControls.ATextboxUC();
             aDateTimePicker1 = new AControls.ADateTimePicker();
             panel4 = new Panel();
             label3 = new Label();
@@ -44,6 +42,7 @@
             aComboBox1 = new AControls.AComboBox();
             panel1 = new Panel();
             aTextboxuc4 = new AControls.ATextboxUC();
+            aButton1 = new AControls.AButton();
             panel4.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -58,7 +57,7 @@
             aTextboxuc3.BorderSize = 2;
             aTextboxuc3.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             aTextboxuc3.ForeColor = Color.Black;
-            aTextboxuc3.Location = new Point(204, 574);
+            aTextboxuc3.Location = new Point(50, 276);
             aTextboxuc3.Margin = new Padding(4);
             aTextboxuc3.Multiline = false;
             aTextboxuc3.Name = "aTextboxuc3";
@@ -67,71 +66,25 @@
             aTextboxuc3.PlaceholderColor = Color.DarkGray;
             aTextboxuc3.PlaceholderText = "Thời gian bay (phút)";
             aTextboxuc3.RoundType = AControls.ATextboxUC.RoundStyles.Full;
-            aTextboxuc3.Size = new Size(246, 37);
+            aTextboxuc3.Size = new Size(254, 37);
             aTextboxuc3.TabIndex = 8;
             aTextboxuc3.Texts = "";
             aTextboxuc3.UnderlinedStyle = false;
             // 
-            // aTextboxuc2
-            // 
-            aTextboxuc2.BackColor = SystemColors.Window;
-            aTextboxuc2.BorderColor = Color.FromArgb(3, 4, 94);
-            aTextboxuc2.BorderFocusColor = Color.FromArgb(0, 138, 184);
-            aTextboxuc2.BorderRadius = 0;
-            aTextboxuc2.BorderSize = 2;
-            aTextboxuc2.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            aTextboxuc2.ForeColor = Color.Black;
-            aTextboxuc2.Location = new Point(204, 442);
-            aTextboxuc2.Margin = new Padding(4);
-            aTextboxuc2.Multiline = false;
-            aTextboxuc2.Name = "aTextboxuc2";
-            aTextboxuc2.Padding = new Padding(7);
-            aTextboxuc2.PasswordChar = false;
-            aTextboxuc2.PlaceholderColor = Color.DarkGray;
-            aTextboxuc2.PlaceholderText = "Số lượng ghế còn lại";
-            aTextboxuc2.RoundType = AControls.ATextboxUC.RoundStyles.Full;
-            aTextboxuc2.Size = new Size(246, 37);
-            aTextboxuc2.TabIndex = 7;
-            aTextboxuc2.Texts = "";
-            aTextboxuc2.UnderlinedStyle = false;
-            // 
             // panel5
             // 
             panel5.BackColor = Color.FromArgb(255, 192, 192);
-            panel5.Location = new Point(440, 191);
+            panel5.Location = new Point(325, 125);
             panel5.Name = "panel5";
-            panel5.Size = new Size(250, 81);
+            panel5.Size = new Size(250, 257);
             panel5.TabIndex = 6;
-            // 
-            // aTextboxuc1
-            // 
-            aTextboxuc1.BackColor = SystemColors.Window;
-            aTextboxuc1.BorderColor = Color.FromArgb(3, 4, 94);
-            aTextboxuc1.BorderFocusColor = Color.FromArgb(0, 138, 184);
-            aTextboxuc1.BorderRadius = 0;
-            aTextboxuc1.BorderSize = 2;
-            aTextboxuc1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            aTextboxuc1.ForeColor = Color.Black;
-            aTextboxuc1.Location = new Point(208, 382);
-            aTextboxuc1.Margin = new Padding(4);
-            aTextboxuc1.Multiline = false;
-            aTextboxuc1.Name = "aTextboxuc1";
-            aTextboxuc1.Padding = new Padding(7);
-            aTextboxuc1.PasswordChar = false;
-            aTextboxuc1.PlaceholderColor = Color.DarkGray;
-            aTextboxuc1.PlaceholderText = "Số lượng ghế";
-            aTextboxuc1.RoundType = AControls.ATextboxUC.RoundStyles.Full;
-            aTextboxuc1.Size = new Size(246, 37);
-            aTextboxuc1.TabIndex = 5;
-            aTextboxuc1.Texts = "";
-            aTextboxuc1.UnderlinedStyle = false;
             // 
             // aDateTimePicker1
             // 
             aDateTimePicker1.BorderColor = Color.FromArgb(3, 4, 94);
             aDateTimePicker1.BorderSize = 2;
             aDateTimePicker1.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            aDateTimePicker1.Location = new Point(200, 508);
+            aDateTimePicker1.Location = new Point(50, 218);
             aDateTimePicker1.MinimumSize = new Size(0, 35);
             aDateTimePicker1.Name = "aDateTimePicker1";
             aDateTimePicker1.Size = new Size(254, 35);
@@ -143,7 +96,7 @@
             // 
             panel4.Controls.Add(label3);
             panel4.Controls.Add(aComboBox3);
-            panel4.Location = new Point(113, 191);
+            panel4.Location = new Point(50, 125);
             panel4.Name = "panel4";
             panel4.Size = new Size(250, 68);
             panel4.TabIndex = 3;
@@ -181,7 +134,7 @@
             // 
             panel3.Controls.Add(label2);
             panel3.Controls.Add(aComboBox2);
-            panel3.Location = new Point(440, 61);
+            panel3.Location = new Point(325, 30);
             panel3.Name = "panel3";
             panel3.Size = new Size(250, 68);
             panel3.TabIndex = 2;
@@ -219,7 +172,7 @@
             // 
             panel2.Controls.Add(label1);
             panel2.Controls.Add(aComboBox1);
-            panel2.Location = new Point(123, 61);
+            panel2.Location = new Point(50, 30);
             panel2.Name = "panel2";
             panel2.Size = new Size(250, 68);
             panel2.TabIndex = 1;
@@ -256,9 +209,9 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(64, 64, 64);
-            panel1.Location = new Point(813, 102);
+            panel1.Location = new Point(700, 30);
             panel1.Name = "panel1";
-            panel1.Size = new Size(250, 125);
+            panel1.Size = new Size(750, 551);
             panel1.TabIndex = 9;
             // 
             // aTextboxuc4
@@ -270,7 +223,7 @@
             aTextboxuc4.BorderSize = 2;
             aTextboxuc4.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             aTextboxuc4.ForeColor = Color.Black;
-            aTextboxuc4.Location = new Point(523, 382);
+            aTextboxuc4.Location = new Point(50, 345);
             aTextboxuc4.Margin = new Padding(4);
             aTextboxuc4.Multiline = false;
             aTextboxuc4.Name = "aTextboxuc4";
@@ -279,24 +232,45 @@
             aTextboxuc4.PlaceholderColor = Color.DarkGray;
             aTextboxuc4.PlaceholderText = "Giá tiền";
             aTextboxuc4.RoundType = AControls.ATextboxUC.RoundStyles.Full;
-            aTextboxuc4.Size = new Size(246, 37);
+            aTextboxuc4.Size = new Size(254, 37);
             aTextboxuc4.TabIndex = 10;
             aTextboxuc4.Texts = "";
             aTextboxuc4.UnderlinedStyle = false;
+            // 
+            // aButton1
+            // 
+            aButton1.BackColor = Color.FromArgb(3, 4, 94);
+            aButton1.BackgroundColor = Color.FromArgb(3, 4, 94);
+            aButton1.BorderColor = Color.PaleVioletRed;
+            aButton1.BorderRadius = 20;
+            aButton1.BorderSize = 0;
+            aButton1.FlatAppearance.BorderSize = 0;
+            aButton1.FlatStyle = FlatStyle.Flat;
+            aButton1.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            aButton1.ForeColor = Color.White;
+            aButton1.LineType = AControls.AButton.LineStyles.None;
+            aButton1.Location = new Point(50, 589);
+            aButton1.Name = "aButton1";
+            aButton1.RoundType = AControls.AButton.RoundStyles.Full;
+            aButton1.Size = new Size(200, 50);
+            aButton1.TabIndex = 11;
+            aButton1.Text = "Tạo chuyến bay";
+            aButton1.TextColor = Color.White;
+            aButton1.ThinknessLine = 0;
+            aButton1.UseVisualStyleBackColor = false;
             // 
             // OperationFlightUC
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 245, 248);
+            Controls.Add(aButton1);
             Controls.Add(aTextboxuc4);
             Controls.Add(panel1);
             Controls.Add(aTextboxuc3);
-            Controls.Add(aTextboxuc2);
             Controls.Add(panel2);
             Controls.Add(panel5);
             Controls.Add(panel3);
-            Controls.Add(aTextboxuc1);
             Controls.Add(panel4);
             Controls.Add(aDateTimePicker1);
             Name = "OperationFlightUC";
@@ -314,7 +288,6 @@
         private AControls.AComboBox aComboBox1;
         private Panel panel2;
         private Label label1;
-        private AControls.ATextboxUC aTextboxuc1;
         private AControls.ADateTimePicker aDateTimePicker1;
         private Panel panel4;
         private Label label3;
@@ -324,8 +297,8 @@
         private AControls.AComboBox aComboBox2;
         private Panel panel5;
         private AControls.ATextboxUC aTextboxuc3;
-        private AControls.ATextboxUC aTextboxuc2;
         private Panel panel1;
         private AControls.ATextboxUC aTextboxuc4;
+        private AControls.AButton aButton1;
     }
 }

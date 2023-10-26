@@ -21,7 +21,17 @@ namespace Airline_ticket_sales_management
         public FrmHome()
         {
             InitializeComponent();
-            loadBody(new HomeAdminUC());
+            loadBody(new FlightTicketUC());
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            GraphicsPath path = RoundedRectangle.Create(this.Width, this.Height, 40);
+
+            // Đặt Region cho Form để tạo hình dạng bo tròn
+            this.Region = new Region(path);
         }
 
         public void hideLoad()
@@ -136,14 +146,19 @@ namespace Airline_ticket_sales_management
             }
         }
 
-        protected override void OnPaint(PaintEventArgs e)
+        private void abtnFlightTicket_Click(object sender, EventArgs e)
         {
-            base.OnPaint(e);
+            if (currentButton != abtnFlightTicket)
+            {
+                if (currentButton != null)
+                {
+                    doDeactivateButton(currentButton);
+                }
 
-            GraphicsPath path = RoundedRectangle.Create(this.Width, this.Height, 40);
-
-            // Đặt Region cho Form để tạo hình dạng bo tròn
-            this.Region = new Region(path);
+                currentButton = abtnFlightTicket;
+                doActivateButton(currentButton);
+                loadBody(new FlightTicketUC());
+            }
         }
     }
 }

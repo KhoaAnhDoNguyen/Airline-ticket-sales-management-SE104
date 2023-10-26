@@ -22,6 +22,15 @@
     <Compile Update="AControls\ATextboxUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="CreateFlightTicketUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="FlightTicketUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SearchFlightTicketUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Usercontrols\PlaneTicketClassItemUC.cs">
       <SubType>UserControl</SubType>
     </Compile>

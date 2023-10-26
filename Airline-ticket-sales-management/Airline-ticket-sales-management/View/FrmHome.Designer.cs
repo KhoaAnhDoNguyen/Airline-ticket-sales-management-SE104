@@ -34,7 +34,7 @@
             aButton5 = new AControls.AButton();
             abtnPlane = new AControls.AButton();
             abtnReport = new AControls.AButton();
-            aButton2 = new AControls.AButton();
+            abtnFlightTicket = new AControls.AButton();
             abtnFlight = new AControls.AButton();
             pcbClose = new PictureBox();
             pcbLogo = new PictureBox();
@@ -68,7 +68,7 @@
             pnMenu.Controls.Add(aButton5);
             pnMenu.Controls.Add(abtnPlane);
             pnMenu.Controls.Add(abtnReport);
-            pnMenu.Controls.Add(aButton2);
+            pnMenu.Controls.Add(abtnFlightTicket);
             pnMenu.Controls.Add(abtnFlight);
             pnMenu.Location = new Point(200, 65);
             pnMenu.Margin = new Padding(3, 4, 3, 4);
@@ -175,29 +175,30 @@
             abtnReport.UseVisualStyleBackColor = false;
             abtnReport.Click += abtnReport_Click;
             // 
-            // aButton2
+            // abtnFlightTicket
             // 
-            aButton2.BackColor = Color.Transparent;
-            aButton2.BackgroundColor = Color.Transparent;
-            aButton2.BorderColor = Color.FromArgb(124, 124, 124);
-            aButton2.BorderRadius = 0;
-            aButton2.BorderSize = 0;
-            aButton2.Dock = DockStyle.Left;
-            aButton2.FlatAppearance.BorderSize = 0;
-            aButton2.FlatStyle = FlatStyle.Flat;
-            aButton2.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            aButton2.ForeColor = Color.FromArgb(124, 124, 124);
-            aButton2.LineType = AControls.AButton.LineStyles.None;
-            aButton2.Location = new Point(150, 0);
-            aButton2.Margin = new Padding(3, 4, 3, 4);
-            aButton2.Name = "aButton2";
-            aButton2.RoundType = AControls.AButton.RoundStyles.Full;
-            aButton2.Size = new Size(150, 60);
-            aButton2.TabIndex = 5;
-            aButton2.Text = "Vé máy bay";
-            aButton2.TextColor = Color.FromArgb(124, 124, 124);
-            aButton2.ThinknessLine = 5;
-            aButton2.UseVisualStyleBackColor = false;
+            abtnFlightTicket.BackColor = Color.Transparent;
+            abtnFlightTicket.BackgroundColor = Color.Transparent;
+            abtnFlightTicket.BorderColor = Color.FromArgb(124, 124, 124);
+            abtnFlightTicket.BorderRadius = 0;
+            abtnFlightTicket.BorderSize = 0;
+            abtnFlightTicket.Dock = DockStyle.Left;
+            abtnFlightTicket.FlatAppearance.BorderSize = 0;
+            abtnFlightTicket.FlatStyle = FlatStyle.Flat;
+            abtnFlightTicket.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            abtnFlightTicket.ForeColor = Color.FromArgb(124, 124, 124);
+            abtnFlightTicket.LineType = AControls.AButton.LineStyles.None;
+            abtnFlightTicket.Location = new Point(150, 0);
+            abtnFlightTicket.Margin = new Padding(3, 4, 3, 4);
+            abtnFlightTicket.Name = "abtnFlightTicket";
+            abtnFlightTicket.RoundType = AControls.AButton.RoundStyles.Full;
+            abtnFlightTicket.Size = new Size(150, 60);
+            abtnFlightTicket.TabIndex = 5;
+            abtnFlightTicket.Text = "Vé máy bay";
+            abtnFlightTicket.TextColor = Color.FromArgb(124, 124, 124);
+            abtnFlightTicket.ThinknessLine = 5;
+            abtnFlightTicket.UseVisualStyleBackColor = false;
+            abtnFlightTicket.Click += abtnFlightTicket_Click;
             // 
             // abtnFlight
             // 
@@ -304,7 +305,7 @@
         private Panel pnMenu;
         private Panel pnBody;
         private AControls.AButton abtnFlight;
-        private AControls.AButton aButton2;
+        private AControls.AButton abtnFlightTicket;
         private AControls.AButton abtnPlane;
         private AControls.AButton abtnReport;
         private AControls.AButton abtnSetting;

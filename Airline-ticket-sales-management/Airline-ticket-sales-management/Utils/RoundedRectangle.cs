@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Airline_ticket_sales_management
 {
-    public static class RoundedRectangle
+    public class RoundedRectangle
     {
         public static GraphicsPath Create(Rectangle rect, int radius)
         {

@@ -176,7 +176,7 @@
             atxbUsername.Padding = new Padding(7);
             atxbUsername.PasswordChar = false;
             atxbUsername.PlaceholderColor = Color.DarkGray;
-            atxbUsername.PlaceholderText = "Họ và tên";
+            atxbUsername.PlaceholderText = "Email hoặc số điện thoại";
             atxbUsername.RoundType = AControls.ATextboxUC.RoundStyles.Full;
             atxbUsername.Size = new Size(300, 37);
             atxbUsername.TabIndex = 22;
