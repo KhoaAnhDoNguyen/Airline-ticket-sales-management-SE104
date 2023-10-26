@@ -30,9 +30,9 @@
         {
             pnMenuFlight = new Panel();
             pnLine = new Panel();
-            aButton3 = new AControls.AButton();
-            aButton1 = new AControls.AButton();
-            aButton2 = new AControls.AButton();
+            abtnDetailFlight = new AControls.AButton();
+            abtnCreateFlight = new AControls.AButton();
+            abtnListFlight = new AControls.AButton();
             pnBodyFlight = new Panel();
             pnMenuFlight.SuspendLayout();
             SuspendLayout();
@@ -41,9 +41,9 @@
             // 
             pnMenuFlight.BackColor = Color.Transparent;
             pnMenuFlight.Controls.Add(pnLine);
-            pnMenuFlight.Controls.Add(aButton3);
-            pnMenuFlight.Controls.Add(aButton1);
-            pnMenuFlight.Controls.Add(aButton2);
+            pnMenuFlight.Controls.Add(abtnDetailFlight);
+            pnMenuFlight.Controls.Add(abtnCreateFlight);
+            pnMenuFlight.Controls.Add(abtnListFlight);
             pnMenuFlight.Dock = DockStyle.Top;
             pnMenuFlight.Location = new Point(0, 0);
             pnMenuFlight.Margin = new Padding(3, 4, 3, 4);
@@ -60,74 +60,77 @@
             pnLine.Size = new Size(1398, 2);
             pnLine.TabIndex = 3;
             // 
-            // aButton3
+            // abtnDetailFlight
             // 
-            aButton3.BackColor = Color.Transparent;
-            aButton3.BackgroundColor = Color.Transparent;
-            aButton3.BorderColor = Color.FromArgb(3, 4, 94);
-            aButton3.BorderRadius = 30;
-            aButton3.BorderSize = 2;
-            aButton3.FlatAppearance.BorderSize = 0;
-            aButton3.FlatStyle = FlatStyle.Flat;
-            aButton3.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            aButton3.ForeColor = Color.FromArgb(3, 4, 94);
-            aButton3.LineType = AControls.AButton.LineStyles.None;
-            aButton3.Location = new Point(1310, 30);
-            aButton3.Margin = new Padding(3, 4, 3, 4);
-            aButton3.Name = "aButton3";
-            aButton3.RoundType = AControls.AButton.RoundStyles.Top;
-            aButton3.Size = new Size(140, 75);
-            aButton3.TabIndex = 2;
-            aButton3.Text = "Chi tiết chuyến bay";
-            aButton3.TextColor = Color.FromArgb(3, 4, 94);
-            aButton3.ThinknessLine = 0;
-            aButton3.UseVisualStyleBackColor = false;
+            abtnDetailFlight.BackColor = Color.Transparent;
+            abtnDetailFlight.BackgroundColor = Color.Transparent;
+            abtnDetailFlight.BorderColor = Color.FromArgb(3, 4, 94);
+            abtnDetailFlight.BorderRadius = 30;
+            abtnDetailFlight.BorderSize = 2;
+            abtnDetailFlight.FlatAppearance.BorderSize = 0;
+            abtnDetailFlight.FlatStyle = FlatStyle.Flat;
+            abtnDetailFlight.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            abtnDetailFlight.ForeColor = Color.FromArgb(3, 4, 94);
+            abtnDetailFlight.LineType = AControls.AButton.LineStyles.None;
+            abtnDetailFlight.Location = new Point(1310, 30);
+            abtnDetailFlight.Margin = new Padding(3, 4, 3, 4);
+            abtnDetailFlight.Name = "abtnDetailFlight";
+            abtnDetailFlight.RoundType = AControls.AButton.RoundStyles.Top;
+            abtnDetailFlight.Size = new Size(140, 75);
+            abtnDetailFlight.TabIndex = 2;
+            abtnDetailFlight.Text = "Chi tiết chuyến bay";
+            abtnDetailFlight.TextColor = Color.FromArgb(3, 4, 94);
+            abtnDetailFlight.ThinknessLine = 0;
+            abtnDetailFlight.UseVisualStyleBackColor = false;
+            abtnDetailFlight.Click += abtnDetailFlight_Click;
             // 
-            // aButton1
+            // abtnCreateFlight
             // 
-            aButton1.BackColor = Color.Transparent;
-            aButton1.BackgroundColor = Color.Transparent;
-            aButton1.BorderColor = Color.FromArgb(3, 4, 94);
-            aButton1.BorderRadius = 30;
-            aButton1.BorderSize = 2;
-            aButton1.FlatAppearance.BorderSize = 0;
-            aButton1.FlatStyle = FlatStyle.Flat;
-            aButton1.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            aButton1.ForeColor = Color.FromArgb(3, 4, 94);
-            aButton1.LineType = AControls.AButton.LineStyles.None;
-            aButton1.Location = new Point(235, 30);
-            aButton1.Margin = new Padding(3, 4, 3, 4);
-            aButton1.Name = "aButton1";
-            aButton1.RoundType = AControls.AButton.RoundStyles.Top;
-            aButton1.Size = new Size(150, 75);
-            aButton1.TabIndex = 1;
-            aButton1.Text = "Tạo chuyến bay mới";
-            aButton1.TextColor = Color.FromArgb(3, 4, 94);
-            aButton1.ThinknessLine = 0;
-            aButton1.UseVisualStyleBackColor = false;
+            abtnCreateFlight.BackColor = Color.Transparent;
+            abtnCreateFlight.BackgroundColor = Color.Transparent;
+            abtnCreateFlight.BorderColor = Color.FromArgb(3, 4, 94);
+            abtnCreateFlight.BorderRadius = 30;
+            abtnCreateFlight.BorderSize = 2;
+            abtnCreateFlight.FlatAppearance.BorderSize = 0;
+            abtnCreateFlight.FlatStyle = FlatStyle.Flat;
+            abtnCreateFlight.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            abtnCreateFlight.ForeColor = Color.FromArgb(3, 4, 94);
+            abtnCreateFlight.LineType = AControls.AButton.LineStyles.None;
+            abtnCreateFlight.Location = new Point(235, 30);
+            abtnCreateFlight.Margin = new Padding(3, 4, 3, 4);
+            abtnCreateFlight.Name = "abtnCreateFlight";
+            abtnCreateFlight.RoundType = AControls.AButton.RoundStyles.Top;
+            abtnCreateFlight.Size = new Size(150, 75);
+            abtnCreateFlight.TabIndex = 1;
+            abtnCreateFlight.Text = "Tạo chuyến bay mới";
+            abtnCreateFlight.TextColor = Color.FromArgb(3, 4, 94);
+            abtnCreateFlight.ThinknessLine = 0;
+            abtnCreateFlight.UseVisualStyleBackColor = false;
+            abtnCreateFlight.Click += abtnCreateFlight_Click;
             // 
-            // aButton2
+            // abtnListFlight
             // 
-            aButton2.BackColor = Color.FromArgb(3, 4, 94);
-            aButton2.BackgroundColor = Color.FromArgb(3, 4, 94);
-            aButton2.BorderColor = Color.FromArgb(3, 4, 94);
-            aButton2.BorderRadius = 30;
-            aButton2.BorderSize = 2;
-            aButton2.FlatAppearance.BorderSize = 0;
-            aButton2.FlatStyle = FlatStyle.Flat;
-            aButton2.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            aButton2.ForeColor = Color.White;
-            aButton2.LineType = AControls.AButton.LineStyles.None;
-            aButton2.Location = new Point(50, 30);
-            aButton2.Margin = new Padding(3, 4, 3, 4);
-            aButton2.Name = "aButton2";
-            aButton2.RoundType = AControls.AButton.RoundStyles.Top;
-            aButton2.Size = new Size(160, 75);
-            aButton2.TabIndex = 0;
-            aButton2.Text = "Danh sách chuyến bay";
-            aButton2.TextColor = Color.White;
-            aButton2.ThinknessLine = 0;
-            aButton2.UseVisualStyleBackColor = false;
+            abtnListFlight.BackColor = Color.FromArgb(3, 4, 94);
+            abtnListFlight.BackgroundColor = Color.FromArgb(3, 4, 94);
+            abtnListFlight.BorderColor = Color.FromArgb(3, 4, 94);
+            abtnListFlight.BorderRadius = 30;
+            abtnListFlight.BorderSize = 2;
+            abtnListFlight.FlatAppearance.BorderSize = 0;
+            abtnListFlight.FlatStyle = FlatStyle.Flat;
+            abtnListFlight.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            abtnListFlight.ForeColor = Color.White;
+            abtnListFlight.LineType = AControls.AButton.LineStyles.None;
+            abtnListFlight.Location = new Point(50, 30);
+            abtnListFlight.Margin = new Padding(3, 4, 3, 4);
+            abtnListFlight.Name = "abtnListFlight";
+            abtnListFlight.RoundType = AControls.AButton.RoundStyles.Top;
+            abtnListFlight.Size = new Size(160, 75);
+            abtnListFlight.TabIndex = 0;
+            abtnListFlight.Text = "Danh sách chuyến bay";
+            abtnListFlight.TextColor = Color.White;
+            abtnListFlight.ThinknessLine = 0;
+            abtnListFlight.UseVisualStyleBackColor = false;
+            abtnListFlight.Click += abtnListFlight_Click;
             // 
             // pnBodyFlight
             // 
@@ -156,9 +159,9 @@
 
         #endregion
         private Panel pnMenuFlight;
-        private AControls.AButton aButton2;
-        private AControls.AButton aButton1;
-        private AControls.AButton aButton3;
+        private AControls.AButton abtnListFlight;
+        private AControls.AButton abtnCreateFlight;
+        private AControls.AButton abtnDetailFlight;
         private Panel pnLine;
         private Panel pnBodyFlight;
     }

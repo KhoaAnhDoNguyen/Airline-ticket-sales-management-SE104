@@ -25,6 +25,9 @@
     <Compile Update="Usercontrols\PlaneTicketClassItemUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="View\Admin\Flight\OperationFlightUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="View\Login\ForgotPassword1.cs">
       <SubType>UserControl</SubType>
     </Compile>

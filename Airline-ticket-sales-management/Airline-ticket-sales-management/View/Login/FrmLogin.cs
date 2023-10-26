@@ -18,6 +18,16 @@ namespace Airline_ticket_sales_management
             InitializeComponent();
         }
 
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            GraphicsPath path = RoundedRectangle.Create(this.Width, this.Height, 20);
+
+            // Đặt Region cho Form để tạo hình dạng bo tròn
+            this.Region = new Region(path);
+        }
+
         public void pibClose_Click(object sender, EventArgs e)
         {
             this.Close();
