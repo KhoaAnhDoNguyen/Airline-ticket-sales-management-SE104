@@ -273,6 +273,16 @@ namespace Airline_ticket_sales_management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_10_30_003909 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2023-10-30 003909", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Seach24x24Icon {
             get {
                 object obj = ResourceManager.GetObject("Seach24x24Icon", resourceCulture);

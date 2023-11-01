@@ -27,4 +27,10 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+    <Folder Include="DALs\" />
+    <Folder Include="Model\" />
+  </ItemGroup>
+
 </Project>

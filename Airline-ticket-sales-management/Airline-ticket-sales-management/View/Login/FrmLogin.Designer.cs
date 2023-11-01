@@ -33,10 +33,12 @@
             aCircularPictureBox1 = new AControls.ACircularPictureBox();
             apnMain = new AControls.APanel();
             loginuc1 = new LoginUC();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pibClose).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)aCircularPictureBox1).BeginInit();
             apnMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pibClose
@@ -108,12 +110,23 @@
             loginuc1.Size = new Size(500, 668);
             loginuc1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.Screenshot_2023_10_30_003909;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(725, 117);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(550, 550);
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            // 
             // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(97, 114, 243);
             ClientSize = new Size(1366, 768);
+            Controls.Add(pictureBox1);
             Controls.Add(aCircularPictureBox1);
             Controls.Add(pictureBox2);
             Controls.Add(apnMain);
@@ -127,6 +140,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)aCircularPictureBox1).EndInit();
             apnMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -137,5 +151,6 @@
         private AControls.ACircularPictureBox aCircularPictureBox1;
         private AControls.APanel apnMain;
         private LoginUC loginuc1;
+        private PictureBox pictureBox1;
     }
 }

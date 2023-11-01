@@ -70,11 +70,11 @@
             abtnSearch.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             abtnSearch.ForeColor = Color.FromArgb(3, 4, 94);
             abtnSearch.LineType = AControls.AButton.LineStyles.None;
-            abtnSearch.Location = new Point(185, 30);
+            abtnSearch.Location = new Point(225, 30);
             abtnSearch.Margin = new Padding(3, 4, 3, 4);
             abtnSearch.Name = "abtnSearch";
             abtnSearch.RoundType = AControls.AButton.RoundStyles.Top;
-            abtnSearch.Size = new Size(120, 75);
+            abtnSearch.Size = new Size(139, 75);
             abtnSearch.TabIndex = 1;
             abtnSearch.Text = "Tra cứu";
             abtnSearch.TextColor = Color.FromArgb(3, 4, 94);
@@ -98,9 +98,9 @@
             abtnCreateFlightTicket.Margin = new Padding(3, 4, 3, 4);
             abtnCreateFlightTicket.Name = "abtnCreateFlightTicket";
             abtnCreateFlightTicket.RoundType = AControls.AButton.RoundStyles.Top;
-            abtnCreateFlightTicket.Size = new Size(110, 75);
+            abtnCreateFlightTicket.Size = new Size(139, 75);
             abtnCreateFlightTicket.TabIndex = 0;
-            abtnCreateFlightTicket.Text = "Lâp vé máy bay";
+            abtnCreateFlightTicket.Text = "Tạo vé\r\nmáy bay";
             abtnCreateFlightTicket.TextColor = Color.White;
             abtnCreateFlightTicket.ThinknessLine = 0;
             abtnCreateFlightTicket.UseVisualStyleBackColor = false;

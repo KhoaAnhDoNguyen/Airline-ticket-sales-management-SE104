@@ -37,6 +37,7 @@
             atxbPassword1 = new AControls.ATextboxUC();
             atxbUsername = new AControls.ATextboxUC();
             lbForgotPassword = new Label();
+            aTextboxuc1 = new AControls.ATextboxUC();
             ((System.ComponentModel.ISupportInitialize)pibHideViewPassword).BeginInit();
             SuspendLayout();
             // 
@@ -45,12 +46,12 @@
             atxbPassword2.BackColor = Color.FromArgb(217, 221, 252);
             atxbPassword2.BorderColor = Color.Transparent;
             atxbPassword2.BorderFocusColor = Color.FromArgb(217, 221, 252);
-            atxbPassword2.BorderRadius = 0;
+            atxbPassword2.BorderRadius = 10;
             atxbPassword2.BorderSize = 2;
             atxbPassword2.Cursor = Cursors.IBeam;
             atxbPassword2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             atxbPassword2.ForeColor = Color.Black;
-            atxbPassword2.Location = new Point(114, 325);
+            atxbPassword2.Location = new Point(115, 326);
             atxbPassword2.Margin = new Padding(4);
             atxbPassword2.Multiline = false;
             atxbPassword2.Name = "atxbPassword2";
@@ -59,7 +60,7 @@
             atxbPassword2.PlaceholderColor = Color.DarkGray;
             atxbPassword2.PlaceholderText = "Mật khẩu";
             atxbPassword2.RoundType = AControls.ATextboxUC.RoundStyles.Full;
-            atxbPassword2.Size = new Size(250, 35);
+            atxbPassword2.Size = new Size(245, 35);
             atxbPassword2.TabIndex = 29;
             atxbPassword2.Texts = "";
             atxbPassword2.UnderlinedStyle = false;
@@ -70,9 +71,9 @@
             pibHideViewPassword.BackgroundImage = Properties.Resources.hide;
             pibHideViewPassword.BackgroundImageLayout = ImageLayout.Stretch;
             pibHideViewPassword.Cursor = Cursors.Hand;
-            pibHideViewPassword.Location = new Point(365, 328);
+            pibHideViewPassword.Location = new Point(367, 330);
             pibHideViewPassword.Name = "pibHideViewPassword";
-            pibHideViewPassword.Size = new Size(32, 32);
+            pibHideViewPassword.Size = new Size(28, 28);
             pibHideViewPassword.TabIndex = 25;
             pibHideViewPassword.TabStop = false;
             // 
@@ -169,7 +170,7 @@
             atxbUsername.Cursor = Cursors.IBeam;
             atxbUsername.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             atxbUsername.ForeColor = Color.Black;
-            atxbUsername.Location = new Point(104, 274);
+            atxbUsername.Location = new Point(115, 279);
             atxbUsername.Margin = new Padding(4);
             atxbUsername.Multiline = false;
             atxbUsername.Name = "atxbUsername";
@@ -178,7 +179,7 @@
             atxbUsername.PlaceholderColor = Color.DarkGray;
             atxbUsername.PlaceholderText = "Email hoặc số điện thoại";
             atxbUsername.RoundType = AControls.ATextboxUC.RoundStyles.Full;
-            atxbUsername.Size = new Size(300, 37);
+            atxbUsername.Size = new Size(289, 37);
             atxbUsername.TabIndex = 22;
             atxbUsername.Texts = "";
             atxbUsername.UnderlinedStyle = false;
@@ -196,6 +197,30 @@
             lbForgotPassword.Text = "Quên mật khẩu";
             lbForgotPassword.Click += lbForgotPassword_Click;
             // 
+            // aTextboxuc1
+            // 
+            aTextboxuc1.BackColor = Color.FromArgb(217, 221, 252);
+            aTextboxuc1.BorderColor = Color.FromArgb(217, 221, 252);
+            aTextboxuc1.BorderFocusColor = Color.FromArgb(217, 221, 252);
+            aTextboxuc1.BorderRadius = 10;
+            aTextboxuc1.BorderSize = 2;
+            aTextboxuc1.Cursor = Cursors.IBeam;
+            aTextboxuc1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            aTextboxuc1.ForeColor = Color.Black;
+            aTextboxuc1.Location = new Point(104, 279);
+            aTextboxuc1.Margin = new Padding(4);
+            aTextboxuc1.Multiline = false;
+            aTextboxuc1.Name = "aTextboxuc1";
+            aTextboxuc1.Padding = new Padding(7);
+            aTextboxuc1.PasswordChar = true;
+            aTextboxuc1.PlaceholderColor = Color.DarkGray;
+            aTextboxuc1.PlaceholderText = "";
+            aTextboxuc1.RoundType = AControls.ATextboxUC.RoundStyles.Full;
+            aTextboxuc1.Size = new Size(300, 37);
+            aTextboxuc1.TabIndex = 31;
+            aTextboxuc1.Texts = "";
+            aTextboxuc1.UnderlinedStyle = false;
+            // 
             // LoginUC
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -210,6 +235,7 @@
             Controls.Add(label2);
             Controls.Add(atxbPassword1);
             Controls.Add(atxbUsername);
+            Controls.Add(aTextboxuc1);
             Name = "LoginUC";
             Size = new Size(500, 668);
             ((System.ComponentModel.ISupportInitialize)pibHideViewPassword).EndInit();
@@ -228,5 +254,6 @@
         private AControls.ATextboxUC atxbPassword1;
         private AControls.ATextboxUC atxbUsername;
         private Label lbForgotPassword;
+        private AControls.ATextboxUC aTextboxuc1;
     }
 }

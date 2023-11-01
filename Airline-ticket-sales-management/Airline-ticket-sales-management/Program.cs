@@ -12,7 +12,6 @@ namespace Airline_ticket_sales_management
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new FrmLogin());
-
         }
     }
 }
