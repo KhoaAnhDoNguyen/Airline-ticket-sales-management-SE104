@@ -1,6 +1,6 @@
-﻿namespace Airline_ticket_sales_management.Usercontrols
+﻿namespace Airline_ticket_sales_management
 {
-    partial class PlaneTicketClassItemUC
+    partial class LoadingUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,36 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            pibLoad = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pibLoad).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // pibLoad
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(4, 39);
-            label1.MaximumSize = new Size(100, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(92, 22);
-            label1.TabIndex = 0;
-            label1.Text = "Phổ thông";
+            pibLoad.BackgroundImageLayout = ImageLayout.Stretch;
+            pibLoad.Image = Properties.Resources.load625;
+            pibLoad.Location = new Point(438, 48);
+            pibLoad.Name = "pibLoad";
+            pibLoad.Size = new Size(625, 625);
+            pibLoad.TabIndex = 5;
+            pibLoad.TabStop = false;
             // 
-            // PlaneTicketClassItemUC
+            // LoadingUC
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            Controls.Add(label1);
-            ForeColor = Color.White;
-            Name = "PlaneTicketClassItemUC";
-            Size = new Size(100, 100);
+            BackColor = Color.FromArgb(245, 245, 248);
+            Controls.Add(pibLoad);
+            Name = "LoadingUC";
+            Size = new Size(1500, 720);
+            ((System.ComponentModel.ISupportInitialize)pibLoad).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private PictureBox pibLoad;
     }
 }

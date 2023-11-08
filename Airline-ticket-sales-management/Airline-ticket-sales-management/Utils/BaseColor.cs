@@ -18,20 +18,10 @@ namespace Airline_ticket_sales_management.Utils
     {
         public static List<String> ColorList = new List<string>
             {
-                "#0000FF", // Xanh dương
-                "#008000", // Xanh lá cây
-                "#00FF00", // Xanh lá cây nhạt
-                "#006400", // Xanh lá cây đậm
-                "#00FFFF", // Xanh ngọc
-                "#008080", // Xanh lục
-                "#FFB6C1", // Hồng nhạt
-                "#FF69B4", // Hồng tươi
-                "#FF1493", // Hồng đậm
-                "#FFA500", // Cam
-                "#A52A2A", // Nâu nhạt
-                "#8B4513", // Nâu đậm
-                "#D8BFD8", // Tím nhạt
-                "#800080"  // Tím đậm
+                "#83DBEC",
+                "#4FCBE3",
+                "#1EA7C2",
+                "#19889F",
             };
     }
 }

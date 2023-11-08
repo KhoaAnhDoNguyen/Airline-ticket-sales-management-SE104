@@ -2,12 +2,18 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net462</TargetFramework>
     <RootNamespace>Airline_ticket_sales_management</RootNamespace>
-    <Nullable>enable</Nullable>
+	<LangVersion>10.0</LangVersion>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
+    <StartupObject></StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="View\Login\ForgotPassword2.cs">
@@ -25,12 +31,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="DALs\" />
-    <Folder Include="Model\" />
   </ItemGroup>
 
 </Project>

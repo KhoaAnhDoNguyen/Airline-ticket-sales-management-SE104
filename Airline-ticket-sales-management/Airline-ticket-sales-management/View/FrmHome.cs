@@ -21,7 +21,7 @@ namespace Airline_ticket_sales_management
         public FrmHome()
         {
             InitializeComponent();
-            loadBody(new FlightTicketUC());
+            loadBody(new PlaneUC());
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -32,17 +32,6 @@ namespace Airline_ticket_sales_management
 
             // Đặt Region cho Form để tạo hình dạng bo tròn
             this.Region = new Region(path);
-        }
-
-        public void hideLoad()
-        {
-            pibLoad.Visible = false;
-        }
-
-        public void viewLoad()
-        {
-            pibLoad.BringToFront();
-            pibLoad.Visible = true;
         }
 
         private void loadBody(UserControl uc)
@@ -97,7 +86,11 @@ namespace Airline_ticket_sales_management
 
                 currentButton = abtnFlight;
                 doActivateButton(currentButton);
-                loadBody(new FlightUC());
+
+                loadBody(new LoadingUC());
+
+                FlightUC newBody = new FlightUC();
+                loadBody(newBody);
             }
         }
 

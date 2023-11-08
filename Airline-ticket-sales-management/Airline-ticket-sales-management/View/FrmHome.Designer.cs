@@ -39,13 +39,10 @@
             pcbClose = new PictureBox();
             pcbLogo = new PictureBox();
             pnBody = new Panel();
-            pibLoad = new PictureBox();
             pnTop.SuspendLayout();
             pnMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbClose).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).BeginInit();
-            pnBody.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pibLoad).BeginInit();
             SuspendLayout();
             // 
             // pnTop
@@ -254,24 +251,12 @@
             // pnBody
             // 
             pnBody.BackColor = Color.Transparent;
-            pnBody.Controls.Add(pibLoad);
             pnBody.Dock = DockStyle.Fill;
             pnBody.Location = new Point(0, 125);
             pnBody.Margin = new Padding(3, 4, 3, 4);
             pnBody.Name = "pnBody";
             pnBody.Size = new Size(1500, 825);
             pnBody.TabIndex = 2;
-            // 
-            // pibLoad
-            // 
-            pibLoad.BackgroundImageLayout = ImageLayout.Stretch;
-            pibLoad.Image = Properties.Resources.load625;
-            pibLoad.Location = new Point(437, 100);
-            pibLoad.Name = "pibLoad";
-            pibLoad.Size = new Size(625, 625);
-            pibLoad.TabIndex = 4;
-            pibLoad.TabStop = false;
-            pibLoad.Visible = false;
             // 
             // FrmHome
             // 
@@ -292,8 +277,6 @@
             pnMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pcbClose).EndInit();
             ((System.ComponentModel.ISupportInitialize)pcbLogo).EndInit();
-            pnBody.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pibLoad).EndInit();
             ResumeLayout(false);
         }
 
@@ -310,7 +293,6 @@
         private AControls.AButton abtnReport;
         private AControls.AButton abtnSetting;
         private AControls.AButton aButton5;
-        private PictureBox pibLoad;
     }
 }
 

@@ -16,11 +16,13 @@ namespace Airline_ticket_sales_management
         public FlightListUC()
         {
             InitializeComponent();
+
+            loadDataFlight();
         }
 
         private void loadDataFlight()
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 1000; i++)
             {
                 FlightItemUC uc = new FlightItemUC();
                 pnFlightList.Controls.Add(uc);
@@ -39,7 +41,6 @@ namespace Airline_ticket_sales_management
 
         private void FlightListUC_Load(object sender, EventArgs e)
         {
-            loadDataFlight();
         }
     }
 }

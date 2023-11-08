@@ -36,7 +36,7 @@ namespace Airline_ticket_sales_management
                 pn.Dock = DockStyle.Top;
             }
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < ColorCodes.ColorList.Count; i++)
             {
                 PlaneTicketClassItemUC uc = new PlaneTicketClassItemUC();
                 pnTicketClass.Controls.Add(uc);
@@ -50,8 +50,6 @@ namespace Airline_ticket_sales_management
                 pn.BackColor = Color.Transparent;
                 pn.BringToFront();
                 pn.Dock = DockStyle.Top;
-
-
             }
         }
     }
